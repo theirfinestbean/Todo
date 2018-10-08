@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.example.jake.todo;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -22,8 +22,6 @@ public class TodoActivity extends AppCompatActivity {
         // call the super class onCreate to complete the creation of activity like
         // the view hierarchy
         super.onCreate(savedInstanceState);
-
-        Log.d(TAG, " *** Just to say the PC is in onCreate!");
 
         // set the user interface layout for this Activity
         // the layout file is defined in the project res/layout/activity_todo.xml file
@@ -57,8 +55,10 @@ public class TodoActivity extends AppCompatActivity {
     //      mTodoIndex = (mTodoIndex + 1) % todos.length;
     */
 
-                mTodoIndex = (mTodoIndex + 1) % todos.length; Note, %;
-                mTextView.setText(todos[mTodoIndex]);
+                mTodoIndex = (mTodoIndex + 1) % mTodos.length;
+                TodoTextView.setText(mTodos[mTodoIndex]);
+
+                Log.d(TAG, " *** Just to say the PC is in onCreate!");
             }
         });
     }

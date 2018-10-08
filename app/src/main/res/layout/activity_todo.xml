@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.todo.TodoActivity">
+    tools:context="com.example.jake.todo.TodoActivity">
 
     <TextView
         android:id="@+id/textViewTodo"
@@ -15,7 +15,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/todo_list_view"
+        android:text="@string/todo_list"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
